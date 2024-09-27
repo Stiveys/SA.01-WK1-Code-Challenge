@@ -1,4 +1,4 @@
-function calculateGrade(marks) {
+function studentMarks(marks) {
 if (marks > 79) {
     return 'A';
 }
