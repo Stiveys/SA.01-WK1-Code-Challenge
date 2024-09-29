@@ -1,19 +1,23 @@
-function student_grade_generator(mark) {
-if (mark > 79) {
-    return 'A';
-}
-else if (mark >= 60) {
-    return 'B';
-}
-else if (mark >= 49) {
-    return 'C';
-}
-else if (mark >= 40) {
-    return 'D';
-}
-else {
-    return 'E';
-}
+function studentGradeGenerator(mark) {
+
+  if (mark >= 80 && mark <= 100) {
+    console.log("A");
+
+  } else if (mark >= 60 && mark <= 79) {
+    console.log("B");
+
+  } else if (mark >= 49 && mark <= 59) {
+    console.log("C");
+
+  } else if (mark >= 40 && mark <= 48) {
+    console.log("D");
+
+  } else if (mark < 40 && mark >= 0) {
+    console.log("E");
+    
+  } else {
+    console.log("Invalid mark");
+  }
 }
 
 function studentGradeGenerator() {
