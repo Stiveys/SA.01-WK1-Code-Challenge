@@ -1,35 +1,24 @@
 function studentGradeGenerator(mark) {
-
   if (mark >= 80 && mark <= 100) {
-    console.log("A");
-
+    return "A";
   } else if (mark >= 60 && mark <= 79) {
-    console.log("B");
-
+    return "B";
   } else if (mark >= 49 && mark <= 59) {
-    console.log("C");
-
+    return "C";
   } else if (mark >= 40 && mark <= 48) {
-    console.log("D");
-
+    return "D";
   } else if (mark < 40 && mark >= 0) {
-    console.log("E");
-    
+    return "E";
   } else {
-    console.log("Invalid mark");
+    return "Invalid mark";
   }
 }
 
-function studentGradeGenerator() {
-    const mark = parseFloat(prompt('Enter the student mark (0-100):'));
-
-    if (isNan(mark) || mark < 0 || mark > 100) {
-        return 'incorrect input. Kindly enter a correct mark between 0 and 100.';
-    }
-
-    const grade = studentGradeGenerator(mark);
-    return `The student's mark is ${grade}`;
+function generateGrade() {
+  let marks = parseInt(document.getElementById('marks').value, 10);
+  let grade = studentGradeGenerator(marks);
+  document.getElementById('result').innerText = `The grade is: ${grade}`;
 }
 
-const fullResult = studentGradeGenerator();
-console.log(fullResult);
+// Attach the generateGrade function to the button click event
+document.getElementById('generateButton').addEventListener('click', generateGrade);

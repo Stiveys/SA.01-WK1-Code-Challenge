@@ -1,5 +1,6 @@
 # SA.01-WK1-Code-Challenge
-#Title: Net Salary Calculator
+
+Net Salary Calculator.
 
 #Portrayal: This is a JavaScript program that computes the net compensation of a worker in view of their essential compensation, benefits, and material expense rates. It utilizes charge sections and rates, NHIF rates, and NSSF rates to work out the net compensation.
 
